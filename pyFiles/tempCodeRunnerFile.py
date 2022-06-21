@@ -1,0 +1,1 @@
+listen_text = str(request.args['query'])

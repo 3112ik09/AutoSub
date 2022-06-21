@@ -1,0 +1,32 @@
+.Body{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.data{
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+    justify-content: space-between;
+    padding: 10px;
+}
+.input{
+    height: 500px;
+    width: 500px;
+    background-color: #eaeded;
+    border: 1px solid black;
+}
+.answer{
+    height: 500px;
+    width: 500px;
+    background-color: #eaeded;
+    border: 1px solid black
+}
+.mic{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
