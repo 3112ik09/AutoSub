@@ -36,8 +36,6 @@ def data():
     listen_text = str(request.args['query'])
     lan = str(request.args['lan'])
     lan2 = str(request.args['lan2'])
-    print(lan)
-    print(lan2)
     translator = Translator()
     result = translator.translate(listen_text, src=lan, dest=lan2)
     return result.text
