@@ -34,4 +34,4 @@ urllib3==1.26.9
 vosk==0.3.42
 Werkzeug==2.1.2
 zipp==3.8.0
-PyAudio==0.2.11
+

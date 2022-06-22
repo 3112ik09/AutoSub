@@ -18,14 +18,14 @@ function Body() {
     const [Language, setLan] = useState('en');
     const [Language2, setLan2] = useState('en');
 
-    async function handleClick() {
+    function handleClick() {
       setMsg("Speaking .......");
-      await fetch("/voice?lan="+Language).then((res) =>
-          res.text().then((data) => {
-            setMessage(data);
-            setMsg("Mic Off ......");
-          })
-      );
+      // await fetch("/voice?lan="+Language).then((res) =>
+      //     res.text().then((data) => {
+      //       setMessage(data);
+      //       setMsg("Mic Off ......");
+      //     })
+      // );
       
     };
     useEffect(() => {
@@ -74,7 +74,7 @@ function Body() {
         <textarea rows={15} cols={40} className='textArea'value={message}
         onChange={handleMessageChange}/>
         <div className='mic'>
-          <IconButton size="small" onClick={handleClick} >
+          <IconButton size="small"  >
             <MicIcon></MicIcon>
           </IconButton>
           <Blink color='black' text={msg} fontSize='50'>
